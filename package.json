@@ -1,0 +1,25 @@
+{
+  "name": "alldaymongooselab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElijaHHall/AllDayMongooseLab.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ElijaHHall/AllDayMongooseLab/issues"
+  },
+  "homepage": "https://github.com/ElijaHHall/AllDayMongooseLab#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "mongoose": "^5.0.15",
+    "morgan": "^1.9.0"
+  }
+}
