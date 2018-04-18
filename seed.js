@@ -1,13 +1,27 @@
+
 var db = require('./models');
 
 var to_do = [
 {	
-	firstTodo: 'walk the dog',
-	secondTodo: 'grab a new fridge',
-	thirdTodo: 'buy groceries',
-	fourthTodo: 'pick up paycheck',
+	task: "walk dog",
+	description: "just walk dog",
+	ease: "pretty easy"
+},
+
+{	
+	task: "pick up paycheck",
+	description: "gotta get that money",
+	ease: "easy peasy"
+},
+
+{	task: "buy groceries",
+	description: "ya need groceries man",
+	ease: "pretty easy"
+	
 }
+
 ];
+
 
 // remove all records that match {} -- which means remove ALL records
 db.Todo.remove({}, function(err, items){
@@ -17,10 +31,12 @@ db.Todo.remove({}, function(err, items){
     console.log('removed all items');
 
     // create new records based on the array books_list
-    db.Todo.create(to_do, function(err, items){
+    db.Todo.create(to_do, function(err, todos){
       if (err) { return console.log('err', err); }
-      console.log("created", to_do.length, "items");
+      console.log("created", todos.length, "todos");
       process.exit();
     });
   }
 });
+
+

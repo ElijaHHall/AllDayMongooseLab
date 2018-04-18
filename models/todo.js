@@ -2,9 +2,10 @@ var mongoose = require('mongoose');
 var	Schema 	 = mongoose.Schema;
 
 var TodoSchema = new Schema({ 
-	task: String,
-	description: String
-
+	 title: String,
+     author: String,
+     image: String,
+     release_date: String
 });
 
 var Todo = mongoose.model('Todo', TodoSchema);
